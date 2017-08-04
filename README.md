@@ -1,5 +1,8 @@
 # electron-es6-react
 
+This starter project is an adaption of the starter provided by b52:
+https://github.com/b52/electron-es6-react
+
 A simple boilerplate app to demonstrate how to use [ES6] and [React] with
 [Electron]. It uses [Babel] to automatically transpile ES6 and JSX code,
 without depending on any package manager besides `npm`.
@@ -16,8 +19,8 @@ The renderer entry point `index.html` does basically the same, but loads the
 ## Installation
 
 ```bash
-git clone https://github.com/b52/electron-es6-react.git
-cd electron-es6-react
+git clone https://github.com/StefanWarringa/electron-es6-react-starter.git
+cd electron-es6-react-starter
 npm install
 npm start
 ```
