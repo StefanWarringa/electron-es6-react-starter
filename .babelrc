@@ -1,0 +1,14 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    ["module-resolver", {
+        "root": ["."],
+        "alias" : {
+          "actions"    : "./store/actions",
+          "reducers"   : "./store/reducers",
+          "components" : "./render/components",
+          "views" :      "./render/views"
+        }
+      }]
+  ]
+}
