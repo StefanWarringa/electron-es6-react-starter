@@ -1,7 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Hello from '../../components/hello/hello.jsx';
+import React            from 'react';
+import ReactDOM         from 'react-dom';
+import MainView         from './main.jsx';
+import { Provider }     from 'react-redux';
+import { createStore }  from 'redux';
+import appState         from 'reducers';
+
+let store = createStore(appState);
 
 window.onload = function(){
-  ReactDOM.render(<Hello />, document.getElementById('app'));
+  ReactDOM.render(
+    <Provider store={store}>
+      <MainView/>
+    </Provider>,
+    document.getElementById('app')
+  );
 }
